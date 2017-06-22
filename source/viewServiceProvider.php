@@ -3,6 +3,7 @@
 namespace html;
 
 use foundation\serviceProvider;
+use path;
 use Twig_Loader_Filesystem as loader;
 use Twig_Environment as twig;
 
@@ -13,7 +14,7 @@ class viewServiceProvider extends serviceProvider
 		$this->app->share ( 'view', function ( )
 		{
 			$loader = new loader ( path::to ( 'views' ) );
-			$twig = new Twig_Environment ( $loader, 
+			$twig = new twig ( $loader, 
 			[
 			    'cache' => false,
 			] );
