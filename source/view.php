@@ -15,6 +15,6 @@ class view implements \agreed\view
 
 	public function make ( string $template, array $data = [ ] ) : string
 	{
-		return $this->twig->render ( $template, $data );
+		return $this->engine->render ( $template, $data );
 	}
 }
