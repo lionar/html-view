@@ -6,6 +6,7 @@ use foundation\serviceProvider;
 use path;
 use Twig_Loader_Filesystem as loader;
 use Twig_Environment as twig;
+use view as viewFacade;
 
 class viewServiceProvider extends serviceProvider
 {
@@ -20,5 +21,7 @@ class viewServiceProvider extends serviceProvider
 			] );
 			return new view ( $twig );
 		} );
+
+		viewFacade::composedBy ( $this->app->make ( 'view' ) );
 	}
 }
