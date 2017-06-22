@@ -1,0 +1,35 @@
+{
+	"name": "lionar/html-view",
+	"version": "0.0.1",
+	"description": "Twig view adaptation.",
+	"keywords": [ "Lionar", "HTML", "View", "Twig" ],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Aron Wouters",
+			"email": "lionar@mail.com",
+			"role": "Developer"
+		}
+	],
+	"require" : {
+		"lionar/foundation": "*",
+		"twig/twig": "2.4.3"
+  	},
+	"require-dev": {
+		
+	},
+	"autoload": {
+    	"psr-4": {
+			"html\\": "source"
+   	 	}
+  	},
+	"autoload-dev": {
+    	"psr-4": {
+			"html\\tests\\": "tests"
+		}
+	},
+	"config": {
+		"preferred-install": "dist"
+	},
+	"minimum-stability": "dev"
+}

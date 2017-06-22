@@ -1,0 +1,272 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "43bf823796aa5c90e86e7566c2240aa2",
+    "packages": [
+        {
+            "name": "lionar/foundation",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lionar/foundation.git",
+                "reference": "853c4ebbadfd4f6b0674ed4d6ddc4d63057c6dd6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lionar/foundation/zipball/853c4ebbadfd4f6b0674ed4d6ddc4d63057c6dd6",
+                "reference": "853c4ebbadfd4f6b0674ed4d6ddc4d63057c6dd6",
+                "shasum": ""
+            },
+            "require": {
+                "lionar/ioc": "*",
+                "lionar/path": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "": [
+                        "source/facades",
+                        "source/helpers"
+                    ],
+                    "agreed\\": "source/agreements",
+                    "foundation\\": "source"
+                },
+                "files": [
+                    "source/helpers/filesystem.php",
+                    "source/helpers/readability.php",
+                    "source/helpers/text.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aron Wouters",
+                    "email": "lionar@mail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A foundation to build a well organised application from.",
+            "keywords": [
+                "lionar",
+                "project"
+            ],
+            "time": "2017-06-22T13:42:43+00:00"
+        },
+        {
+            "name": "lionar/ioc",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lionar/ioc.git",
+                "reference": "eb8649c41eeefe3d41a2f57d0ff71eb85df66241"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lionar/ioc/zipball/eb8649c41eeefe3d41a2f57d0ff71eb85df66241",
+                "reference": "eb8649c41eeefe3d41a2f57d0ff71eb85df66241",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ioc\\": "source"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aron Wouters",
+                    "email": "lionar@mail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Ultimate basic IOC container.",
+            "keywords": [
+                "basic",
+                "ioc",
+                "lionar"
+            ],
+            "time": "2017-06-20T10:53:42+00:00"
+        },
+        {
+            "name": "lionar/path",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lionar/path.git",
+                "reference": "37ec376395de98c20d62f225122ae9a38ee45154"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lionar/path/zipball/37ec376395de98c20d62f225122ae9a38ee45154",
+                "reference": "37ec376395de98c20d62f225122ae9a38ee45154",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "path\\": "source"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aron Wouters",
+                    "email": "lionar@mail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Simple path collection.",
+            "keywords": [
+                "lionar",
+                "path"
+            ],
+            "time": "2017-06-21T15:35:24+00:00"
+        },
+        {
+            "name": "symfony/polyfill-mbstring",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-mbstring.git",
+                "reference": "7c8fae0ac1d216eb54349e6a8baa57d515fe8803"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/7c8fae0ac1d216eb54349e6a8baa57d515fe8803",
+                "reference": "7c8fae0ac1d216eb54349e6a8baa57d515fe8803",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "ext-mbstring": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.5-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Mbstring\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for the Mbstring extension",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "mbstring",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "time": "2017-06-14T15:44:48+00:00"
+        },
+        {
+            "name": "twig/twig",
+            "version": "v2.4.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twigphp/Twig.git",
+                "reference": "eab7c3288ae6603d7d6f92b531626af2b162d1f2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/eab7c3288ae6603d7d6f92b531626af2b162d1f2",
+                "reference": "eab7c3288ae6603d7d6f92b531626af2b162d1f2",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0",
+                "symfony/polyfill-mbstring": "~1.0"
+            },
+            "require-dev": {
+                "psr/container": "^1.0",
+                "symfony/debug": "~2.7",
+                "symfony/phpunit-bridge": "~3.3@dev"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Twig_": "lib/"
+                },
+                "psr-4": {
+                    "Twig\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Armin Ronacher",
+                    "email": "armin.ronacher@active-4.com",
+                    "role": "Project Founder"
+                },
+                {
+                    "name": "Twig Team",
+                    "homepage": "http://twig.sensiolabs.org/contributors",
+                    "role": "Contributors"
+                }
+            ],
+            "description": "Twig, the flexible, fast, and secure template language for PHP",
+            "homepage": "http://twig.sensiolabs.org",
+            "keywords": [
+                "templating"
+            ],
+            "time": "2017-06-07T18:47:58+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
