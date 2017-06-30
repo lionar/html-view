@@ -14,7 +14,6 @@ class view implements \agreed\view
 	public function __construct ( string $path, $cache = false )
 	{
 		$this->setupEngine ( $path, $cache );
-		$this->addFunctions ( );
 	}
 
 	public function make ( string $template, array $data = [ ] ) : string
@@ -34,6 +33,6 @@ class view implements \agreed\view
 
 	public function extend ( string $name, closure $fn )
 	{
-		$this->engine->add ( new fn ( $name, $fn, [ 'is_safe' => [ 'html' ] ] );
+		$this->engine->addFunction ( new fn ( $name, $fn, [ 'is_safe' => [ 'html' ] ] ) );
 	}
 }
