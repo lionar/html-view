@@ -34,6 +34,6 @@ class view implements \agreed\view
 
 	public function extend ( string $name, closure $fn )
 	{
-		$this->engine->add ( new fn ( $name, $fn ) );
+		$this->engine->add ( new fn ( $name, $fn, [ 'is_safe' => [ 'html' ] ] );
 	}
 }
