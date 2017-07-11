@@ -26,7 +26,7 @@ class view implements \agreed\view
 		$this->engine->addFunction ( new fn ( $name, $fn, [ 'is_safe' => [ 'html' ] ] ) );
 	}
 
-	public function global ( sting $name, $global )
+	public function global ( string $name, $global )
 	{
 		$this->engine->addGlobal ( $name, $global );
 	}
