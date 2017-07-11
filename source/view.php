@@ -21,6 +21,16 @@ class view implements \agreed\view
 		return $this->engine->render ( $template . '.twig', $data );
 	}
 
+	public function extend ( string $name, closure $fn )
+	{
+		$this->engine->addFunction ( new fn ( $name, $fn, [ 'is_safe' => [ 'html' ] ] ) );
+	}
+
+	public function global ( sting $name, $global )
+	{
+		$this->engine->addGlobal ( $name, $global );
+	}
+
 	private function setupEngine ( string $path, $cache )
 	{
 		$loader = new loader ($path );
@@ -29,10 +39,5 @@ class view implements \agreed\view
 		[
 		    'cache' => $cache,
 		] );
-	}
-
-	public function extend ( string $name, closure $fn )
-	{
-		$this->engine->addFunction ( new fn ( $name, $fn, [ 'is_safe' => [ 'html' ] ] ) );
 	}
 }
